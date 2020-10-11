@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,25 @@
 		DC74D98025309B5900D808D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC74D97F25309B5900D808D9 /* Preview Assets.xcassets */; };
 		DC74D98B25309B5900D808D9 /* DiExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74D98A25309B5900D808D9 /* DiExampleTests.swift */; };
 		DC74D99625309B5900D808D9 /* DiExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74D99525309B5900D808D9 /* DiExampleUITests.swift */; };
-		DC74D9B025309D6800D808D9 /* AddressFormScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74D9AF25309D6800D808D9 /* AddressFormScreen.swift */; };
-		DC74D9C02530A1EF00D808D9 /* SelectScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74D9BF2530A1EF00D808D9 /* SelectScreen.swift */; };
-		DC74D9D02530A74D00D808D9 /* SelectProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74D9CF2530A74D00D808D9 /* SelectProvider.swift */; };
+		F5C3966F25317EA200A881E9 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3966D25317EA200A881E9 /* Configuration.swift */; };
+		F5C3967025317EA200A881E9 /* ProductionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3966E25317EA200A881E9 /* ProductionConfiguration.swift */; };
+		F5C3968525317F2400A881E9 /* Optional+Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3967E25317F2400A881E9 /* Optional+Apply.swift */; };
+		F5C3968625317F2400A881E9 /* Optional+Execute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3967F25317F2400A881E9 /* Optional+Execute.swift */; };
+		F5C3968725317F2400A881E9 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3968025317F2400A881E9 /* Functions.swift */; };
+		F5C3968825317F2400A881E9 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3968225317F2400A881E9 /* KeychainWrapper.swift */; };
+		F5C3968925317F2400A881E9 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3968325317F2400A881E9 /* KeychainItemAccessibility.swift */; };
+		F5C3968A25317F2400A881E9 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3968425317F2400A881E9 /* Types.swift */; };
+		F5C3968F253201B700A881E9 /* BaseJsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3968E253201B700A881E9 /* BaseJsonDecoder.swift */; };
+		F5C39694253201C900A881E9 /* RequestBuilderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C39693253201C900A881E9 /* RequestBuilderImpl.swift */; };
+		F5C3969A2532021F00A881E9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F5C396992532021F00A881E9 /* Alamofire */; };
+		F5C396A02532D22C00A881E9 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3969F2532D22C00A881E9 /* ApiClient.swift */; };
+		F5C396A92532D51700A881E9 /* AccountApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C396A82532D51700A881E9 /* AccountApiClient.swift */; };
+		F5C396AF2532D63A00A881E9 /* AuthenticatorServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C396AE2532D63A00A881E9 /* AuthenticatorServiceImpl.swift */; };
+		F5C396B42532D65B00A881E9 /* SessionRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C396B32532D65B00A881E9 /* SessionRepositoryImpl.swift */; };
+		F5C396C12532D68F00A881E9 /* LoginStatusProviderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C396BF2532D68F00A881E9 /* LoginStatusProviderImpl.swift */; };
+		F5C396C22532D68F00A881E9 /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C396C02532D68F00A881E9 /* LoginProvider.swift */; };
+		F5C396DC2532DB0900A881E9 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C396DB2532DB0900A881E9 /* LoginScreen.swift */; };
+		F5C396E12532DB4900A881E9 /* LoginScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C396E02532DB4900A881E9 /* LoginScreenViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +64,24 @@
 		DC74D99125309B5900D808D9 /* DiExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC74D99525309B5900D808D9 /* DiExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiExampleUITests.swift; sourceTree = "<group>"; };
 		DC74D99725309B5900D808D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC74D9AF25309D6800D808D9 /* AddressFormScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressFormScreen.swift; sourceTree = "<group>"; };
-		DC74D9BF2530A1EF00D808D9 /* SelectScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectScreen.swift; sourceTree = "<group>"; };
-		DC74D9CF2530A74D00D808D9 /* SelectProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProvider.swift; sourceTree = "<group>"; };
+		F5C3966D25317EA200A881E9 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		F5C3966E25317EA200A881E9 /* ProductionConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductionConfiguration.swift; sourceTree = "<group>"; };
+		F5C3967E25317F2400A881E9 /* Optional+Apply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Apply.swift"; sourceTree = "<group>"; };
+		F5C3967F25317F2400A881E9 /* Optional+Execute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Execute.swift"; sourceTree = "<group>"; };
+		F5C3968025317F2400A881E9 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		F5C3968225317F2400A881E9 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		F5C3968325317F2400A881E9 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		F5C3968425317F2400A881E9 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		F5C3968E253201B700A881E9 /* BaseJsonDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseJsonDecoder.swift; sourceTree = "<group>"; };
+		F5C39693253201C900A881E9 /* RequestBuilderImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilderImpl.swift; sourceTree = "<group>"; };
+		F5C3969F2532D22C00A881E9 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		F5C396A82532D51700A881E9 /* AccountApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountApiClient.swift; sourceTree = "<group>"; };
+		F5C396AE2532D63A00A881E9 /* AuthenticatorServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticatorServiceImpl.swift; sourceTree = "<group>"; };
+		F5C396B32532D65B00A881E9 /* SessionRepositoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionRepositoryImpl.swift; sourceTree = "<group>"; };
+		F5C396BF2532D68F00A881E9 /* LoginStatusProviderImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginStatusProviderImpl.swift; sourceTree = "<group>"; };
+		F5C396C02532D68F00A881E9 /* LoginProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProvider.swift; sourceTree = "<group>"; };
+		F5C396DB2532DB0900A881E9 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		F5C396E02532DB4900A881E9 /* LoginScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5C3969A2532021F00A881E9 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				DC74D9AB25309C7700D808D9 /* Application */,
+				F5C3967425317EF600A881E9 /* Library */,
 				DC74D9A725309BF600D808D9 /* Configuration */,
 				DC74D9A625309BDF00D808D9 /* Resources */,
 				DC74D97A25309B5800D808D9 /* ContentView.swift */,
@@ -147,6 +180,8 @@
 		DC74D9A725309BF600D808D9 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				F5C3966D25317EA200A881E9 /* Configuration.swift */,
+				F5C3966E25317EA200A881E9 /* ProductionConfiguration.swift */,
 				DC74D98125309B5900D808D9 /* Info.plist */,
 			);
 			path = Configuration;
@@ -173,31 +208,18 @@
 		DC74D9AD25309C9F00D808D9 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				DC74D9AE25309CA500D808D9 /* AddressForm */,
-				DC74D9BD2530A1A300D808D9 /* Select */,
+				F5C396CF2532D73500A881E9 /* Login */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		DC74D9AE25309CA500D808D9 /* AddressForm */ = {
-			isa = PBXGroup;
-			children = (
-				DC74D9AF25309D6800D808D9 /* AddressFormScreen.swift */,
-			);
-			path = AddressForm;
-			sourceTree = "<group>";
-		};
-		DC74D9BD2530A1A300D808D9 /* Select */ = {
-			isa = PBXGroup;
-			children = (
-				DC74D9BF2530A1EF00D808D9 /* SelectScreen.swift */,
-			);
-			path = Select;
 			sourceTree = "<group>";
 		};
 		DC74D9CD2530A73900D808D9 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				F5C396AD2532D63000A881E9 /* Service */,
+				F5C396A72532D4E700A881E9 /* ApiClient */,
+				F5C3966225317E3C00A881E9 /* Entity */,
+				F5C3965A253177D600A881E9 /* Repository */,
 				DC74D9CE2530A73D00D808D9 /* Providers */,
 			);
 			path = Domain;
@@ -206,9 +228,90 @@
 		DC74D9CE2530A73D00D808D9 /* Providers */ = {
 			isa = PBXGroup;
 			children = (
-				DC74D9CF2530A74D00D808D9 /* SelectProvider.swift */,
+				F5C396C02532D68F00A881E9 /* LoginProvider.swift */,
+				F5C396BF2532D68F00A881E9 /* LoginStatusProviderImpl.swift */,
 			);
 			path = Providers;
+			sourceTree = "<group>";
+		};
+		F5C3965A253177D600A881E9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F5C396B32532D65B00A881E9 /* SessionRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F5C3966225317E3C00A881E9 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F5C3967425317EF600A881E9 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F5C3969E2532D21800A881E9 /* Network */,
+				F5C3967D25317F2400A881E9 /* Foundation */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		F5C3967D25317F2400A881E9 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				F5C3967E25317F2400A881E9 /* Optional+Apply.swift */,
+				F5C3967F25317F2400A881E9 /* Optional+Execute.swift */,
+				F5C3968025317F2400A881E9 /* Functions.swift */,
+				F5C3968125317F2400A881E9 /* Keychain */,
+				F5C3968425317F2400A881E9 /* Types.swift */,
+				F5C39693253201C900A881E9 /* RequestBuilderImpl.swift */,
+				F5C3968E253201B700A881E9 /* BaseJsonDecoder.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		F5C3968125317F2400A881E9 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				F5C3968225317F2400A881E9 /* KeychainWrapper.swift */,
+				F5C3968325317F2400A881E9 /* KeychainItemAccessibility.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		F5C3969E2532D21800A881E9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F5C3969F2532D22C00A881E9 /* ApiClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F5C396A72532D4E700A881E9 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				F5C396A82532D51700A881E9 /* AccountApiClient.swift */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
+		F5C396AD2532D63000A881E9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F5C396AE2532D63A00A881E9 /* AuthenticatorServiceImpl.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F5C396CF2532D73500A881E9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F5C396DB2532DB0900A881E9 /* LoginScreen.swift */,
+				F5C396E02532DB4900A881E9 /* LoginScreenViewModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +330,9 @@
 			dependencies = (
 			);
 			name = DiExample;
+			packageProductDependencies = (
+				F5C396992532021F00A881E9 /* Alamofire */,
+			);
 			productName = DiExample;
 			productReference = DC74D97525309B5800D808D9 /* DiExample.app */;
 			productType = "com.apple.product-type.application";
@@ -298,6 +404,9 @@
 				Base,
 			);
 			mainGroup = DC74D96C25309B5800D808D9;
+			packageReferences = (
+				F5C396982532021F00A881E9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = DC74D97625309B5800D808D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,10 +450,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC74D97B25309B5800D808D9 /* ContentView.swift in Sources */,
-				DC74D9B025309D6800D808D9 /* AddressFormScreen.swift in Sources */,
+				F5C396B42532D65B00A881E9 /* SessionRepositoryImpl.swift in Sources */,
+				F5C3968525317F2400A881E9 /* Optional+Apply.swift in Sources */,
+				F5C3968625317F2400A881E9 /* Optional+Execute.swift in Sources */,
+				F5C3968925317F2400A881E9 /* KeychainItemAccessibility.swift in Sources */,
+				F5C396A92532D51700A881E9 /* AccountApiClient.swift in Sources */,
 				DC74D97925309B5800D808D9 /* DiExampleApp.swift in Sources */,
-				DC74D9C02530A1EF00D808D9 /* SelectScreen.swift in Sources */,
-				DC74D9D02530A74D00D808D9 /* SelectProvider.swift in Sources */,
+				F5C3968725317F2400A881E9 /* Functions.swift in Sources */,
+				F5C396C22532D68F00A881E9 /* LoginProvider.swift in Sources */,
+				F5C39694253201C900A881E9 /* RequestBuilderImpl.swift in Sources */,
+				F5C396A02532D22C00A881E9 /* ApiClient.swift in Sources */,
+				F5C3968825317F2400A881E9 /* KeychainWrapper.swift in Sources */,
+				F5C3968A25317F2400A881E9 /* Types.swift in Sources */,
+				F5C396AF2532D63A00A881E9 /* AuthenticatorServiceImpl.swift in Sources */,
+				F5C3968F253201B700A881E9 /* BaseJsonDecoder.swift in Sources */,
+				F5C3966F25317EA200A881E9 /* Configuration.swift in Sources */,
+				F5C3967025317EA200A881E9 /* ProductionConfiguration.swift in Sources */,
+				F5C396DC2532DB0900A881E9 /* LoginScreen.swift in Sources */,
+				F5C396E12532DB4900A881E9 /* LoginScreenViewModel.swift in Sources */,
+				F5C396C12532D68F00A881E9 /* LoginStatusProviderImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,6 +782,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F5C396982532021F00A881E9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F5C396992532021F00A881E9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5C396982532021F00A881E9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC74D96D25309B5800D808D9 /* Project object */;
 }

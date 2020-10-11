@@ -4,7 +4,7 @@ import SwiftUI
 struct DiExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            AddressFormScreen()
+            LoginScreen()
         }
     }
 }
